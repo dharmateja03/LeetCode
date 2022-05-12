@@ -4,7 +4,7 @@ class Solution:
         m= int(1e9+7)
         for i in range(len(nums)):
             cnt=0
-            pwr= 3797
+            pwr= 97
             h,sumi=0,0
             for j in range(i,len(nums)):
                 if nums[j]%p ==0:
@@ -13,7 +13,7 @@ class Solution:
                         break
                 sumi =( sumi + nums[j] ) %m
                 h= h*pwr + nums[j]                
-                pwr= (pwr*(3797))%m
+                pwr= (pwr*(97))%m
                 s.add(h)
                 #print(h,nums[i:j+1],sumi)
                 
